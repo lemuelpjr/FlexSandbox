@@ -1,5 +1,5 @@
 .container {
-  max-width: 96rem;
+  max-width: 80rem;
   margin: auto;
 }
 
@@ -13,4 +13,19 @@
   color: #444;
   font-size: 3.2rem;
   font-weight: bold;
+}
+
+.content {
+  display: flex;
+}
+
+.content__box {
+  background-color: limegreen;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  height: 10rem;
+  width: 10rem;
+  padding: 1rem;
+  margin: 2rem;
 }
