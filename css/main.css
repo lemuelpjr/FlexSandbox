@@ -17,6 +17,18 @@
 
 .content {
   display: flex;
+
+  /* FLEX DIRECTION
+  ("row" is the default value) */
+  
+  /* Change main-axis direction from right to left */
+  /* flex-direction: row-reverse; */
+
+  /* Change main-axis direction from top to bottom */
+  /* flex-direction: column; */
+
+  /* Change main-axis direction from bottom to top */
+  flex-direction: column-reverse;
 }
 
 .content__box {
