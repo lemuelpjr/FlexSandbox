@@ -20,12 +20,10 @@
 }
 
 .content__box {
-  background-color: limegreen;
+  background-color: cornflowerblue;
   color: #fff;
   font-size: 2rem;
   text-align: center;
-  height: 10rem;
-  width: 10rem;
   padding: 1rem;
   margin: 2rem;
 }
