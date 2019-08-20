@@ -28,7 +28,28 @@
   /* flex-direction: column; */
 
   /* Change main-axis direction from bottom to top */
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
+
+  /* JUSTIFY CONTENT
+  ("flex-start" is the default value) */
+  
+  /* Center all elements along the main-axis */
+  /* justify-content: center; */
+
+  /* Position all elements in the end of the main-axis */
+  /* justify-content: flex-end; */
+
+  /* Evenly distribute the space BETWEEN all elements along the main-axis */
+  /* justify-content: space-between; */
+
+  /* Evenly distribute the space on both sides of all elements along the main-axis */
+  /* justify-content: space-around; */
+
+  /* Make all the space BETWEEN all elements be equal along the main-axis */
+  /* justify-content: space-evenly; */
+
+  /* Evenly distribute the space BETWEEN all elements along the main-axis */
+  justify-content: space-between;
 }
 
 .content__box {
