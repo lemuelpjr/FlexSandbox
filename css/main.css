@@ -17,6 +17,8 @@
 
 .content {
   background-color: #eee;
+  height: 50rem;
+  margin-bottom: 3rem;
   display: flex;
 
   /* ****************************************
@@ -65,7 +67,7 @@
   /* align-items: stretch; */
 
   /* Center all elements along the cross-axis */
-  align-items: center;
+  /* align-items: center; */
 
   /* Position all elements at the start of the cross-axis */
   /* align-items: flex-start; */
@@ -86,6 +88,29 @@
 
   /* Specify that the flex items will wrap if necessary, in reverse order */
   /* flex-wrap: wrap-reverse; */
+
+  /* *******************************************
+  ALIGN CONTENT ("stretch" is the default value)
+  **********************************************
+  */
+
+  /* Stretch the flex lines to take up the remaining space along the cross-axis */
+  /* align-content: stretch; */
+
+  /* Display the flex lines in the middle of the container along the cross-axis */
+  /* align-content: center; */
+
+  /* Display the flex lines at the start of the container along the cross-axis */
+  /* align-content: flex-start; */
+
+  /* Display the flex lines at the end of the container along the cross-axis */
+  /* align-content: flex-end; */
+
+  /* Display the flex lines with space before, between, and after them */
+  /* align-content: space-around; */
+
+  /* Display the flex lines with with equal space between them */
+  align-content: space-between;
 }
 
 .content__box {
@@ -106,15 +131,14 @@
 }
 
 .content__box--bigger {
-  height: 15rem;
-  font-size: 5rem;
+  /* height: 15rem;
+  font-size: 5rem; */
 }
 
 .content__box--outlier {
-  /* ***********************************************************
-  ALIGN SELF
-  (overwrite the default alignment for one individual flex item)
-  **************************************************************
+  /* **********************************************************************
+  ALIGN SELF (overwrite the default alignment for one individual flex item)
+  *************************************************************************
   */
 
   /* Position an individual element at the start of the cross-axis */
