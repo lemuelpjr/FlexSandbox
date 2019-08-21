@@ -21,7 +21,7 @@
   margin-bottom: 3rem;
   display: flex;
 
-  /* ****************************************
+  /******************************************
   FLEX DIRECTION ("row" is the default value)
   *******************************************
   */
@@ -35,7 +35,7 @@
   /* Change main-axis direction from bottom to top */
   /* flex-direction: column-reverse; */
 
-  /* ************************************************
+  /**************************************************
   JUSTIFY CONTENT ("flex-start" is the default value)
   ***************************************************
   */
@@ -58,7 +58,7 @@
   /* Evenly distribute the space BETWEEN all elements along the main-axis */
   /* justify-content: space-between; */
 
-  /* *****************************************
+  /*******************************************
   ALIGN ITEMS ("stretch" is the default value)
   ********************************************
   */
@@ -78,7 +78,7 @@
   /* Center all elements along the common baseline */
   /* align-items: baseline; */
 
-  /* ***************************************
+  /*****************************************
   FLEX WRAP ("nowrap" is the default value)
   ******************************************
   */
@@ -89,7 +89,7 @@
   /* Specify that the flex items will wrap if necessary, in reverse order */
   /* flex-wrap: wrap-reverse; */
 
-  /* *******************************************
+  /*********************************************
   ALIGN CONTENT ("stretch" is the default value)
   **********************************************
   */
@@ -121,7 +121,7 @@
   padding: 1rem;
   margin: 2rem;
 
-  /* *********************************
+  /***********************************
   FLEX GROW ("0" is the default value)
   ************************************
   */
@@ -136,7 +136,7 @@
 }
 
 .content__box--outlier {
-  /* **********************************************************************
+  /************************************************************************
   ALIGN SELF (overwrite the default alignment for one individual flex item)
   *************************************************************************
   */
@@ -150,7 +150,7 @@
   /* Stretch an individual element to match the hight of the highest flex item */
   /* align-self: stretch; */
 
-  /* *****************************
+  /*******************************
   ORDER ("0" is the default value)
   ********************************
   */
@@ -164,7 +164,7 @@
   /* Element will grow 3 times as much as the default flex grow value */
   /* flex-grow: 3; */
 
-  /* *************************************
+  /***************************************
   FLEX BASIS ("auto" is the default value)
   ****************************************
   */
@@ -172,7 +172,7 @@
   /* Specify the initial length of a flex item */
   /* flex-basis: 25rem; */
 
-  /* *******************************************************************
+  /*********************************************************************
   FLEX SHRINK ("1" is the default value = the element IS ALLOWED shrink)
   **********************************************************************
   */
@@ -180,7 +180,7 @@
   /* The element is NOT ALLOWED to shrink */
   /* flex-shrink: 0; */
 
-  /* ************************************************************
+  /**************************************************************
   FLEX (shorthand value for flex-grow / flex-shrink / flex-basis)
   ***************************************************************
   */
