@@ -75,6 +75,17 @@
 
   /* Center all elements along the common baseline */
   /* align-items: baseline; */
+
+  /* ***************************************
+  FLEX WRAP ("nowrap" is the default value)
+  ******************************************
+  */
+
+  /* Specify that the flex items will wrap if necessary */
+  flex-wrap: wrap;
+
+  /* Specify that the flex items will wrap if necessary, in reverse order */
+  /* flex-wrap: wrap-reverse; */
 }
 
 .content__box {
@@ -110,7 +121,7 @@
   /* align-self: flex-start; */
 
   /* Position an individual element at the end of the cross-axis */
-  align-self: flex-end;
+  /* align-self: flex-end; */
 
   /* Stretch an individual element to match the hight of the highest flex item */
   /* align-self: stretch; */
@@ -149,5 +160,5 @@
   FLEX (shorthand value for flex-grow / flex-shrink / flex-basis)
   ***************************************************************
   */
-  flex: 0 1 26rem;
+  /* flex: 0 1 26rem; */
 }
