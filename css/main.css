@@ -135,7 +135,7 @@
   */
 
   /* Specify the initial length of a flex item */
-  flex-basis: 25rem;
+  /* flex-basis: 25rem; */
 
   /* *******************************************************************
   FLEX SHRINK ("1" is the default value = the element IS ALLOWED shrink)
@@ -143,5 +143,11 @@
   */
 
   /* The element is NOT ALLOWED to shrink */
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
+
+  /* ************************************************************
+  FLEX (shorthand value for flex-grow / flex-shrink / flex-basis)
+  ***************************************************************
+  */
+  flex: 0 1 26rem;
 }
