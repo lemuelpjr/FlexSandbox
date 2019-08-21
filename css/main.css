@@ -16,10 +16,13 @@
 }
 
 .content {
+  background-color: #eee;
   display: flex;
 
-  /* FLEX DIRECTION
-  ("row" is the default value) */
+  /* ****************************************
+  FLEX DIRECTION ("row" is the default value)
+  *******************************************
+  */
   
   /* Change main-axis direction from right to left */
   /* flex-direction: row-reverse; */
@@ -30,13 +33,15 @@
   /* Change main-axis direction from bottom to top */
   /* flex-direction: column-reverse; */
 
-  /* JUSTIFY CONTENT
-  ("flex-start" is the default value) */
+  /* ************************************************
+  JUSTIFY CONTENT ("flex-start" is the default value)
+  ***************************************************
+  */
   
   /* Center all elements along the main-axis */
   /* justify-content: center; */
 
-  /* Position all elements in the end of the main-axis */
+  /* Position all elements at the end of the main-axis */
   /* justify-content: flex-end; */
 
   /* Evenly distribute the space BETWEEN all elements along the main-axis */
@@ -49,7 +54,27 @@
   /* justify-content: space-evenly; */
 
   /* Evenly distribute the space BETWEEN all elements along the main-axis */
-  justify-content: space-between;
+  /* justify-content: space-between; */
+
+  /* *****************************************
+  ALIGN ITEMS ("stretch" is the default value)
+  ********************************************
+  */
+
+  /* Stretch all elements to match the hight of the highest flex item */
+  /* align-items: stretch; */
+
+  /* Center all elements along the cross-axis */
+  /* align-items: center; */
+
+  /* Position all elements at the start of the cross-axis */
+  /* align-items: flex-start; */
+
+  /* Position all elements at the end of the cross-axis */
+  /* align-items: flex-end; */
+
+  /* Center all elements along the common baseline */
+  align-items: baseline;
 }
 
 .content__box {
@@ -59,4 +84,9 @@
   text-align: center;
   padding: 1rem;
   margin: 2rem;
+}
+
+.content__box--bigger {
+  height: 15rem;
+  font-size: 5rem;
 }
