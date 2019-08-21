@@ -65,7 +65,7 @@
   /* align-items: stretch; */
 
   /* Center all elements along the cross-axis */
-  /* align-items: center; */
+  align-items: center;
 
   /* Position all elements at the start of the cross-axis */
   /* align-items: flex-start; */
@@ -74,7 +74,7 @@
   /* align-items: flex-end; */
 
   /* Center all elements along the common baseline */
-  align-items: baseline;
+  /* align-items: baseline; */
 }
 
 .content__box {
@@ -89,4 +89,21 @@
 .content__box--bigger {
   height: 15rem;
   font-size: 5rem;
+}
+
+.content__box--outlier {
+  /* ***********************************************************
+  ALIGN SELF
+  (overwrite the default alignment for one individual flex item)
+  **************************************************************
+  */
+
+  /* Position an individual element at the start of the cross-axis */
+  /* align-self: flex-start; */
+
+  /* Position an individual element at the end of the cross-axis */
+  align-self: flex-end;
+
+  /* Stretch an individual element to match the hight of the highest flex item */
+  /* align-self: stretch; */
 }
