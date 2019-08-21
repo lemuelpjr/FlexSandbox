@@ -84,6 +84,14 @@
   text-align: center;
   padding: 1rem;
   margin: 2rem;
+
+  /* *********************************
+  FLEX GROW ("0" is the default value)
+  ************************************
+  */
+
+  /* Elements will grow as much as there is available space in the container */
+  flex-grow: 1;
 }
 
 .content__box--bigger {
@@ -107,14 +115,17 @@
   /* Stretch an individual element to match the hight of the highest flex item */
   /* align-self: stretch; */
 
-  /* ***********************************************************
+  /* *****************************
   ORDER ("0" is the default value)
-  **************************************************************
+  ********************************
   */
 
   /* Position element before all items with higher order */
   /* order: -1; */
 
   /* Position element after all items with lower order */
-  order: 1;
+  /* order: 1; */
+
+  /* Element will grow 3 times as much as the default flex grow value */
+  flex-grow: 3;
 }
