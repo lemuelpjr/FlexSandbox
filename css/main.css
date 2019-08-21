@@ -106,4 +106,15 @@
 
   /* Stretch an individual element to match the hight of the highest flex item */
   /* align-self: stretch; */
+
+  /* ***********************************************************
+  ORDER ("0" is the default value)
+  **************************************************************
+  */
+
+  /* Position element before all items with higher order */
+  /* order: -1; */
+
+  /* Position element after all items with lower order */
+  order: 1;
 }
