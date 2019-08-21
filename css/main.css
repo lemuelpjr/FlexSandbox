@@ -127,5 +127,13 @@
   /* order: 1; */
 
   /* Element will grow 3 times as much as the default flex grow value */
-  flex-grow: 3;
+  /* flex-grow: 3; */
+
+  /* *************************************
+  FLEX BASIS ("auto" is the default value)
+  ****************************************
+  */
+
+  /* Specify the initial length of a flex item */
+  flex-basis: 50%;
 }
