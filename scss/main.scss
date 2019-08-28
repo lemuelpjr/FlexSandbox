@@ -7,148 +7,182 @@
   text-align: center;
   padding: 1rem;
   border-bottom: solid 1px #ddd;
-}
 
-.header__title {
-  color: #444;
-  font-size: 3.2rem;
-  font-weight: bold;
+  &__title {
+    color: #444;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
 }
 
 .content {
   background-color: #eee;
   height: 50rem;
   margin-bottom: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+
   /******************************************
   FLEX DIRECTION ("row" is the default value)
   *******************************************
   */
+  
   /* Change main-axis direction from right to left */
   /* flex-direction: row-reverse; */
+
   /* Change main-axis direction from top to bottom */
   /* flex-direction: column; */
+
   /* Change main-axis direction from bottom to top */
   /* flex-direction: column-reverse; */
+
   /**************************************************
   JUSTIFY CONTENT ("flex-start" is the default value)
   ***************************************************
   */
+  
   /* Center all elements along the main-axis */
   /* justify-content: center; */
+
   /* Position all elements at the end of the main-axis */
   /* justify-content: flex-end; */
+
   /* Evenly distribute the space BETWEEN all elements along the main-axis */
   /* justify-content: space-between; */
+
   /* Evenly distribute the space on both sides of all elements along the main-axis */
   /* justify-content: space-around; */
+
   /* Make all the space BETWEEN all elements be equal along the main-axis */
   /* justify-content: space-evenly; */
+
   /* Evenly distribute the space BETWEEN all elements along the main-axis */
   /* justify-content: space-between; */
+
   /*******************************************
   ALIGN ITEMS ("stretch" is the default value)
   ********************************************
   */
+
   /* Stretch all elements to match the hight of the highest flex item */
   /* align-items: stretch; */
+
   /* Center all elements along the cross-axis */
   /* align-items: center; */
+
   /* Position all elements at the start of the cross-axis */
   /* align-items: flex-start; */
+
   /* Position all elements at the end of the cross-axis */
   /* align-items: flex-end; */
+
   /* Center all elements along the common baseline */
   /* align-items: baseline; */
+
   /*****************************************
   FLEX WRAP ("nowrap" is the default value)
   ******************************************
   */
+
   /* Specify that the flex items will wrap if necessary */
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+
   /* Specify that the flex items will wrap if necessary, in reverse order */
   /* flex-wrap: wrap-reverse; */
+
   /*********************************************
   ALIGN CONTENT ("stretch" is the default value)
   **********************************************
   */
+
   /* Stretch the flex lines to take up the remaining space along the cross-axis */
   /* align-content: stretch; */
+
   /* Display the flex lines in the middle of the container along the cross-axis */
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
+
   /* Display the flex lines at the start of the container along the cross-axis */
   /* align-content: flex-start; */
+
   /* Display the flex lines at the end of the container along the cross-axis */
   /* align-content: flex-end; */
+
   /* Display the flex lines with space before, between, and after them */
   /* align-content: space-around; */
+
   /* Display the flex lines with with equal space between them */
   /* align-content: space-between; */
-}
 
-.content__box {
-  background-color: cornflowerblue;
-  color: #fff;
-  font-size: 2rem;
-  text-align: center;
-  padding: 1rem;
-  margin: 2rem;
-  /***********************************
+  &__box {
+    background-color: cornflowerblue;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+
+    /***********************************
     FLEX GROW ("0" is the default value)
     ************************************
     */
-  /* Elements will grow as much as there is available space in the container */
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
 
-.content__box--bigger {
-  /* height: 15rem;
+    /* Elements will grow as much as there is available space in the container */
+    flex-grow: 1;
+
+    &--bigger {
+      /* height: 15rem;
       font-size: 5rem; */
-}
+    }
 
-.content__box--outlier {
-  /************************************************************************
+    &--outlier {
+      /************************************************************************
       ALIGN SELF (overwrite the default alignment for one individual flex item)
       *************************************************************************
       */
-  /* Position an individual element at the start of the cross-axis */
-  /* align-self: flex-start; */
-  /* Position an individual element at the end of the cross-axis */
-  /* align-self: flex-end; */
-  /* Stretch an individual element to match the hight of the highest flex item */
-  /* align-self: stretch; */
-  /*******************************
+
+      /* Position an individual element at the start of the cross-axis */
+      /* align-self: flex-start; */
+
+      /* Position an individual element at the end of the cross-axis */
+      /* align-self: flex-end; */
+
+      /* Stretch an individual element to match the hight of the highest flex item */
+      /* align-self: stretch; */
+
+      /*******************************
       ORDER ("0" is the default value)
       ********************************
       */
-  /* Position element before all items with higher order */
-  /* order: -1; */
-  /* Position element after all items with lower order */
-  /* order: 1; */
-  /* Element will grow 3 times as much as the default flex grow value */
-  /* flex-grow: 3; */
-  /***************************************
+
+      /* Position element before all items with higher order */
+      /* order: -1; */
+
+      /* Position element after all items with lower order */
+      /* order: 1; */
+
+      /* Element will grow 3 times as much as the default flex grow value */
+      /* flex-grow: 3; */
+
+      /***************************************
       FLEX BASIS ("auto" is the default value)
       ****************************************
       */
-  /* Specify the initial length of a flex item */
-  /* flex-basis: 25rem; */
-  /*********************************************************************
+
+      /* Specify the initial length of a flex item */
+      /* flex-basis: 25rem; */
+
+      /*********************************************************************
       FLEX SHRINK ("1" is the default value = the element IS ALLOWED shrink)
       **********************************************************************
       */
-  /* The element is NOT ALLOWED to shrink */
-  /* flex-shrink: 0; */
-  /**************************************************************
+
+      /* The element is NOT ALLOWED to shrink */
+      /* flex-shrink: 0; */
+
+      /**************************************************************
       FLEX (shorthand value for flex-grow / flex-shrink / flex-basis)
       ***************************************************************
       */
-  /* flex: 0 1 26rem; */
+      /* flex: 0 1 26rem; */
+    }
+  }
 }
-/*# sourceMappingURL=main.css.map */
